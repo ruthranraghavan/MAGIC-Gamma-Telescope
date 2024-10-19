@@ -1,0 +1,20 @@
+Additional Variable Information
+
+    1.  fLength:  continuous  # major axis of ellipse [mm]
+    2.  fWidth:   continuous  # minor axis of ellipse [mm] 
+    3.  fSize:    continuous  # 10-log of sum of content of all pixels [in #phot]
+    4.  fConc:    continuous  # ratio of sum of two highest pixels over fSize  [ratio]
+    5.  fConc1:   continuous  # ratio of highest pixel over fSize  [ratio]
+    6.  fAsym:    continuous  # distance from highest pixel to center, projected onto major axis [mm]
+    7.  fM3Long:  continuous  # 3rd root of third moment along major axis  [mm] 
+    8.  fM3Trans: continuous  # 3rd root of third moment along minor axis  [mm]
+    9.  fAlpha:   continuous  # angle of major axis with vector to origin [deg]
+   10.  fDist:    continuous  # distance from origin to center of ellipse [mm]
+   11.  class:    g,h         # gamma (signal), hadron (background)
+
+   g = gamma (signal):     12332
+   h = hadron (background): 6688
+
+   For technical reasons, the number of h events is underestimated. In the real data, the h class represents the majority of the events.
+
+   The simple classification accuracy is not meaningful for this data, since classifying a background event as signal is worse than classifying a signal event as background. For comparison of different classifiers an ROC curve has to be used. The relevant points on this curve are those, where the probability of accepting a background event as signal is below one of the following thresholds: 0.01, 0.02, 0.05, 0.1, 0.2 depending on the required quality of the sample of the accepted events for different experiments.
